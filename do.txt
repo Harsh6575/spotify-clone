@@ -1,7 +1,11 @@
 npx create-next-app@latest ./
-npm i tailwind-merge react-icons @supabase/auth-helpers-nextjs @supabase/auth-helpers-react @supabase/auth-ui-react @supabase/auth-ui-shared stripe @radix-ui/react-dialog zustand react-hot-toast
-npm i @types/
+npm i tailwind-merge react-icons @supabase/auth-helpers-nextjs @supabase/auth-helpers-react @supabase/auth-ui-react @supabase/auth-ui-shared stripe @radix-ui/react-dialog zustand react-hot-toast react-hook-form uniqid
 
 npm i supabase@">=1.8.1" --save-dev
 
 npx supabase gen types typescript --project-id "$PROJECT_REF" --schema public > types/supabase.ts
+
+ npm i -D @types/uniqid
+
+
+here change in 1 files of supabase that i have  image folder antonio has images folder

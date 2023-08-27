@@ -30,7 +30,6 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
   const handleLogout = async () => {
     // handle logout
     const { error } = await supabaseClient.auth.signOut();
-    console.log("logout button clicked in header");
     // reset the playing song
     router.refresh();
 
