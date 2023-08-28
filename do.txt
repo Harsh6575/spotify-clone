@@ -1,5 +1,5 @@
 npx create-next-app@latest ./
-npm i tailwind-merge react-icons @supabase/auth-helpers-nextjs @supabase/auth-helpers-react @supabase/auth-ui-react @supabase/auth-ui-shared stripe @radix-ui/react-dialog zustand react-hot-toast react-hook-form uniqid
+npm i tailwind-merge react-icons @supabase/auth-helpers-nextjs @supabase/auth-helpers-react @supabase/auth-ui-react @supabase/auth-ui-shared stripe @radix-ui/react-dialog zustand react-hot-toast react-hook-form uniqid query-string
 
 npm i supabase@">=1.8.1" --save-dev
 
