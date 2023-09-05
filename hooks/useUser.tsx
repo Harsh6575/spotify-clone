@@ -67,7 +67,9 @@ export const MyUserContextProvider = (props: Props) => {
       setUserDetails(null);
       setSubscription(null);
     }
-  }, [user, isLoadingUser]); // here ignore warning or else we will get the user details and the subscription details from the database every time the user details or the subscription details change are changed
+  }, [user, isLoadingUser]); 
+  // }, [user, isLoadingUser, isLoadingData, userDetails, subscription, getUserDetails, getSubscription]); 
+  // here ignore warning or else we will get the user details and the subscription details from the database every time the user details or the subscription details change are changed
 
   const value = {
     accessToken,
