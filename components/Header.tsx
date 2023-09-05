@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
 
     if (error) {
       toast.error(error.message);
-    }else{
+    } else {
       toast.success("Logged out");
     }
   };
@@ -77,21 +77,14 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           >
             <BiSearch className="text-black" size={20} />
           </button>
-          <button
-                        onClick={() => router.push("/library")}
-                        className="
-                            rounded-full
-                            p-2
-                            bg-white
-                            flex
-                            items-center
-                            justify-center
-                            hover:opacity-75
-                            transition    
-                        "
-                    >
-                        <MdLibraryMusic className="text-black" size={20} />
-                    </button>
+          {user && (
+            <button
+              onClick={() => router.push("/library")}
+              className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"
+            >
+              <MdLibraryMusic className="text-black" size={20} />
+            </button>
+          )}
         </div>
         <div className="flex justify-between items-center gap-x-4">
           {user ? (
